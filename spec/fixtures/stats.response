@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK 
+Server: nginx
+Date: Tue, 24 Nov 2009 01:21:12 GMT
+Content-Type: text/xml
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: session=testkey;EXPIRES=Wed, 24-Nov-2010 01:21:12 GMT; PATH=/
+
+<scores>
+   <metric>
+      <type>spell</type>
+      <key>raw</key>
+      <value>4</value>
+   </metric>   <metric>
+      <type>stats</type>
+      <key>sentences</key>
+      <value>6</value>
+   </metric>   <metric>
+      <type>stats</type>
+      <key>words</key>
+      <value>141</value>
+   </metric>   <metric>
+      <type>style</type>
+      <key>passive voice</key>
+      <value>1</value>
+   </metric></scores>

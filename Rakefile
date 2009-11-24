@@ -5,13 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "deadlinez"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Makes it easy to handle After the Deadline AJAX proxying and their API.}
+    gem.description = %Q{Makes it easy to handle After the Deadline AJAX proxying and their API.}
     gem.email = "david@bitwax.cd"
     gem.homepage = "http://github.com/dbalatero/deadlinez"
     gem.authors = ["David Balatero"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_development_dependency "fakeweb"
+    gem.add_dependency 'httparty'
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
