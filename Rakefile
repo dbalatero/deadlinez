@@ -7,7 +7,7 @@ begin
     gem.name = "deadlinez"
     gem.summary = %Q{Makes it easy to handle After the Deadline AJAX proxying and their API.}
     gem.description = %Q{Makes it easy to handle After the Deadline AJAX proxying and their API.}
-    gem.email = "david@bitwax.cd"
+    gem.email = "dbalatero@gmail.com"
     gem.homepage = "http://github.com/dbalatero/deadlinez"
     gem.authors = ["David Balatero"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
