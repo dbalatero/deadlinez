@@ -1,6 +1,11 @@
 = deadlinez
 
-Description goes here.
+This gives you a simple interface to After the Deadline's grammar/spell checking service.
+
+Current version supports:
+
+* /stats
+* /verify
 
 == Note on Patches/Pull Requests
  
