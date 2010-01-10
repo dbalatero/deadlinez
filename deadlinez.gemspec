@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{deadlinez}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Balatero"]
-  s.date = %q{2009-12-08}
+  s.date = %q{2010-01-10}
   s.description = %q{Makes it easy to handle After the Deadline AJAX proxying and their API.}
   s.email = %q{dbalatero@gmail.com}
   s.extra_rdoc_files = [
@@ -23,6 +23,8 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "deadlinez.gemspec",
+     "init.rb",
      "lib/deadlinez.rb",
      "lib/deadlinez/api.rb",
      "lib/deadlinez/proxy.rb",

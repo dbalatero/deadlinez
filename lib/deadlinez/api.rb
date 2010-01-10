@@ -8,9 +8,9 @@ module Deadlinez
     # plugin.
     def self.proxy(path, params)
       proxy_params = Deadlinez::Proxy.strip_params(params)
-      proxy_params['key'] = Deadlinez.api_key
-      response = get(path,
-                      :query => params,
+      response = post(path,
+                      :query => { :key => Deadlinez.api_key },
+                      :body => proxy_params,
                       :format => nil)
       response.body
     end
