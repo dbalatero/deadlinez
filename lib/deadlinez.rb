@@ -7,6 +7,6 @@ require 'deadlinez/proxy'
 
 module Deadlinez
   class << self
-    attr_accessor :api_key
+    attr_accessor :api_key # deprecated, not needed.
   end
 end

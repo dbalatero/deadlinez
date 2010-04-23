@@ -1,8 +1,6 @@
 require File.dirname(__FILE__) + "/../spec_helper"
 
 describe Deadlinez::Api do
-  Deadlinez.api_key = 'testkey'
-
   describe "#stats" do
     it "should return correct stats" do
       FakeWeb.register_uri(:post,

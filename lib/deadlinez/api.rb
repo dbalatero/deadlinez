@@ -9,7 +9,6 @@ module Deadlinez
     def self.proxy(path, params)
       proxy_params = Deadlinez::Proxy.strip_params(params)
       response = post(path,
-                      :query => { :key => Deadlinez.api_key },
                       :body => proxy_params,
                       :format => nil)
       response.body
@@ -18,8 +17,7 @@ module Deadlinez
     def self.stats(data)
       response = post('/stats',
                      :body => {
-                       :data => data,
-                       :key => Deadlinez.api_key
+                       :data => data
                      })
       response['scores']['metric']
     end
