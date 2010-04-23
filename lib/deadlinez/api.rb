@@ -16,8 +16,8 @@ module Deadlinez
     end
 
     def self.stats(data)
-      response = get('/stats',
-                     :query => {
+      response = post('/stats',
+                     :body => {
                        :data => data,
                        :key => Deadlinez.api_key
                      })
