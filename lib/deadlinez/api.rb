@@ -23,13 +23,5 @@ module Deadlinez
                      })
       response['scores']['metric']
     end
-
-    def self.verify(key = Deadlinez.api_key)
-      response = get('/verify',
-                     :query => {
-                       :key => key
-                     })
-      response.body.strip == 'valid'
-    end
   end
 end
