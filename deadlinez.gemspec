@@ -19,10 +19,12 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "CHANGELOG",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "deadlinez.gemspec",
      "init.rb",
      "lib/deadlinez.rb",
      "lib/deadlinez/api.rb",
