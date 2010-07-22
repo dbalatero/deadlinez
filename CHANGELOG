@@ -1,0 +1,3 @@
+0.1.1
+-----
+* Send Host, User-Agent, and Content-Type headers to AtD when using #proxy.
