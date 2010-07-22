@@ -10,7 +10,12 @@ module Deadlinez
       proxy_params = Deadlinez::Proxy.strip_params(params)
       response = post(path,
                       :body => proxy_params,
-                      :format => nil)
+                      :format => nil,
+                      :headers => {
+                        'Host' => 'service.afterthedeadline.com',
+                        'Content-Type' => 'application/x-www-form-urlencoded',
+                        'User-Agent' => 'AtD/0.1'
+                      })
       response.body
     end
 
